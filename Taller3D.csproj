@@ -43,12 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Example\Circle.cs" />
-    <Compile Include="Example\Example1.cs" />
-    <Compile Include="Example\Example2.cs" />
-    <Compile Include="Example\Triangle.cs" />
+    <Compile Include="Week1\Example\Circle.cs" />
+    <Compile Include="Week1\Example\Example1.cs" />
+    <Compile Include="Week1\Example\Example2.cs" />
+    <Compile Include="Week1\Example\Triangle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Week2\Example1\Circle.cs" />
+    <Compile Include="Week2\Example1\Example1.cs" />
+    <Compile Include="Week2\Example1\Rectangle.cs" />
+    <Compile Include="Week2\Example1\Shape.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

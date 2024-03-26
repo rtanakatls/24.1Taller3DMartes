@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Taller3D
+namespace Taller3D.Week1
 {
     internal class Circle
     {
