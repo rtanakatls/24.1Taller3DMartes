@@ -53,6 +53,7 @@
     <Compile Include="Week2\Example1\Example1.cs" />
     <Compile Include="Week2\Example1\Rectangle.cs" />
     <Compile Include="Week2\Example1\Shape.cs" />
+    <Compile Include="Week2\Example1\Triangle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

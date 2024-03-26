@@ -10,21 +10,70 @@ namespace Taller3D.Week2.Example1
     {
         public void Execute()
         {
-            Rectangle r = new Rectangle(5, 10);
-            Circle c = new Circle(5);
+            bool continueFlag = true;
 
-            Shape[] shapes = new Shape[2];
-            shapes[0] = r;
-            shapes[1] = c;
-
-            Console.WriteLine($"El área del {r.Name} es: {r.GetArea()}");
-            Console.WriteLine($"El área del {c.Name} es: {c.GetArea()}");
-
-            for (int i = 0; i < shapes.Length; i++)
+            while (continueFlag)
             {
-                Console.WriteLine($"El área del {shapes[i].Name} es: {shapes[i].GetArea()}");
+                Shape shape = null;
+
+                Console.WriteLine("Introducir el número a operar:");
+                Console.WriteLine("1. Círculo");
+                Console.WriteLine("2. Triángulo");
+                Console.WriteLine("3. Rectángulo");
+                Console.WriteLine("0. Salir");
+
+                string option = Console.ReadLine();
+
+                switch (option)
+                {
+                    case "1":
+                        shape= GetCircle();
+                        break;
+                    case "2":
+                        shape = GetTriangle();
+                        break;
+                    case "3":
+                        shape = GetRectangle();
+                        break;
+                    case "0":
+                        continueFlag = false;
+                        break;
+                    default:
+                        Console.WriteLine("Opción no válida");
+                        break;
+                }
+
+                if(shape != null)
+                {
+                    Console.WriteLine($"El área del {shape.Name} es {shape.GetArea()}");
+                }
             }
-            Console.ReadLine();
+
+        }
+
+        private Circle GetCircle()
+        {
+            Console.WriteLine("Introducir el radio del círculo:");
+            float r = float.Parse(Console.ReadLine());
+            return new Circle(r);
+        }
+
+        private Triangle GetTriangle()
+        {
+            Console.WriteLine("Introducir la base del triángulo:");
+            float b = float.Parse(Console.ReadLine());
+            Console.WriteLine("Introducir la altura del triángulo:");
+            float h = float.Parse(Console.ReadLine());
+            return new Triangle(b, h);
+        }
+
+        private Rectangle GetRectangle()
+        {
+            Console.WriteLine("Introducir la base del rectángulo:");
+            float b = float.Parse(Console.ReadLine());
+            Console.WriteLine("Introducir la altura del rectángulo:");
+            float h = float.Parse(Console.ReadLine());
+            return new Rectangle(b, h);
         }
     }
 }
