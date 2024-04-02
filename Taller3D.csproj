@@ -54,6 +54,17 @@
     <Compile Include="Week2\Example1\Rectangle.cs" />
     <Compile Include="Week2\Example1\Shape.cs" />
     <Compile Include="Week2\Example1\Triangle.cs" />
+    <Compile Include="Week3\Inventory\Arrow.cs" />
+    <Compile Include="Week3\Inventory\Bow.cs" />
+    <Compile Include="Week3\Inventory\Bullet.cs" />
+    <Compile Include="Week3\Inventory\Item.cs" />
+    <Compile Include="Week3\Inventory\MeleeWeapon.cs" />
+    <Compile Include="Week3\Inventory\Pistol.cs" />
+    <Compile Include="Week3\Inventory\Projectile.cs" />
+    <Compile Include="Week3\Inventory\RangeWeapon.cs" />
+    <Compile Include="Week3\Inventory\Sword.cs" />
+    <Compile Include="Week3\Inventory\Weapon.cs" />
+    <Compile Include="Week3\Inventory\WeaponController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

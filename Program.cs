@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Taller3D.Week2.Example1;
+using Taller3D.Week3.Inventory;
 
 namespace Calcular
 {
@@ -11,8 +12,8 @@ namespace Calcular
     {
         static void Main(string[] args)
         {
-            Example1 example1 = new Example1();
-            example1.Execute();
+            WeaponController weaponController = new WeaponController();
+            weaponController.Execute();
         }
 
     }
