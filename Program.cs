@@ -12,8 +12,6 @@ namespace Calcular
     {
         static void Main(string[] args)
         {
-            WeaponController weaponController = new WeaponController();
-            weaponController.Execute();
         }
 
     }
