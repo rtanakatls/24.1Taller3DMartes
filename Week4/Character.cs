@@ -16,9 +16,13 @@ namespace Taller3D.Week4
         public virtual void TakeDamage(int damage)
         {
             life -= damage;
+            if (life < 0)
+            {
+                life = 0;
+            }
         }
 
-        public virtual float GetDamage()
+        public virtual int GetDamage()
         {
             return damage;
         }
@@ -30,7 +34,7 @@ namespace Taller3D.Week4
 
         public virtual bool IsAlive()
         {
-            return life <= 0;
+            return life > 0;
         }
 
         public virtual bool CanAttack()
