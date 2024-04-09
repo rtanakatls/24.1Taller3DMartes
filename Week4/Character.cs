@@ -33,6 +33,11 @@ namespace Taller3D.Week4
             return life <= 0;
         }
 
+        public virtual bool CanAttack()
+        {
+            return IsAlive();
+        }
+
 
     }
 }
