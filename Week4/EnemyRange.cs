@@ -18,7 +18,11 @@ namespace Taller3D.Week4
             this.bullets = bullets;
         }
 
-        
+        public override bool CanAttack()
+        {
+            return IsAlive() && bullets > 0;
+        }
+
 
     }
 }
