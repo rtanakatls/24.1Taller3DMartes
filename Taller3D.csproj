@@ -65,6 +65,9 @@
     <Compile Include="Week3\Inventory\Sword.cs" />
     <Compile Include="Week3\Inventory\Weapon.cs" />
     <Compile Include="Week3\Inventory\WeaponController.cs" />
+    <Compile Include="Week4\Character.cs" />
+    <Compile Include="Week4\Game.cs" />
+    <Compile Include="Week4\Player.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
